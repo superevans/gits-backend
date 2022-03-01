@@ -12,6 +12,7 @@
         $var = "12223";
         $var1 = 12223;
         $var2 = 1221;
+        $var3 = 231;
     ?>
     <?php echo "Hello, nama saya ".$varBaru."<br>"; ?>
     <?php echo "\r\nHello $var"."<br>"; ?>
