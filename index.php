@@ -13,9 +13,10 @@
         $var1 = 12223;
         $var2 = 1221;
         $var3 = 231;
+        $var4 = 4333;
     ?>
     <?php echo "Hello, nama saya ".$varBaru."<br>"; ?>
     <?php echo "\r\nHello $var"."<br>"; ?>
-    <?php echo "$var1 - $var2 = ".($var1 - $var2); ?>
+    <?php echo "$var1 - $var2 = ".($var1 - $var3); ?>
 </body>
 </html>
