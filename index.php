@@ -12,11 +12,16 @@
         $var = "12223";
         $var1 = 12223;
         $var2 = 1221;
-        $var3 = 231;
-        $var4 = 4333;
+        $var2 += 4; 
+        $cars = array("Volvo", "BMW", "Toyota");
     ?>
     <?php echo "Hello, nama saya ".$varBaru."<br>"; ?>
     <?php echo "\r\nHello $var"."<br>"; ?>
-    <?php echo "$var1 - $var2 = ".($var1 - $var3); ?>
+    <?php echo "$var1 - $var2 = ".($var1 - $var2) ."<br>"; ?>
+    <?php echo "$var1 % $var2 = ".($var1 % $var2) ."<br>"; ?>
+    <?php echo "$var1 ** $var2 = ".($var1** $var2) ."<br>"; ?>
+    <?php echo "$var1 %= $var2 = ".($var1 %= $var2) ."<br>"; ?>
+
+    <?php echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . "."; ?>
 </body>
 </html>
