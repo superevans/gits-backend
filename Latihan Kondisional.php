@@ -8,8 +8,8 @@
 <body>
     <h1>Penilaian</h1>
     <?php
-        $var = 70;
-        $var1 = "Mesin Bagus";
+        $var = 59;
+        $var1 = "Mesin Jelek";
         $var2 = "Body Jelek";
     ?>
     <?php 
@@ -22,11 +22,12 @@
         }else{
             echo "Nilai Anda C";
         }
-        echo "<br";
+        echo "<br><br>";
     ?>
     <?php 
         //Kondisi Mobil
-        echo "Kondisi Mobil<br>";
+        echo "Kondisi Mobil <br>";
+        echo "var1 = $var1, var2 = $var2 <br>";
         if ($var1 == "Mesin Bagus" and $var2 == "Body Bagus"){
             echo "Kondisi Mobil Bagus";
         }else if ($var1 == "Mesin Bagus" or $var2 == "Body Bagus"){
