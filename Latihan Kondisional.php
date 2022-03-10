@@ -36,5 +36,41 @@
             echo "Kondisi Mobil Jelek";
         }
     ?>
+    <?php
+    $employee = [
+        'name' => 'Evans',
+        'email' => 'evans@evans.com',
+        'phone' => '0123456789',
+        'hobbies' => ['Badminton', 'Catur'],
+        'profiles' => ['facebook' => 'gaada fb', 'twitter' => 'gapunya']
+    ];
+
+        //Echo
+        echo '<br>';
+        echo "Phone = " .$employee['phone']."<br>";
+    ?>
+    <?php
+    for ($i=1; $i<=10; $i++){
+        for($j=1; $j<=10-$i; $j++){
+            echo " ";
+        }
+        for($k=1; $k<=$i; $k++){
+            echo "*";
+        }
+        echo "<br>";
+    }
+    for ($i=1; $i<=10; $i++){
+        for($j=1; $j<=$i; $j++){
+            echo " ";
+        }
+        for($k=1; $k<=10-$i; $k++){
+            echo "*";
+        }
+        echo "<br>";
+    }
+        
+    ?>
+
+
 </body>
 </html>
