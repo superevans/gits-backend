@@ -1,54 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-eqipv="X-UA-Compatible" content="IE=Edge">
-    <title>Belajar</title>
-</head>
-<body>
-    <h1>Yo</h1>
-    <?php
-        $varBaru = "Evans";
-        $var = "12223";
-        $var1 = 12223;
-        $var2 = 1221;
-        $var2 += 4; 
-        $var3 = 5;
-        $var4 = 10;
-        $cars = array("Volvo", "BMW", "Toyota");
-    ?>
-    <?php 
-        echo "Hello, nama saya ".$varBaru."<br>"; 
-        echo "\r\nHello $var"."<br>";
-        echo "$var1 - $var2 = ".($var1 - $var2) ."<br>";
-        echo "$var1 % $var2 = ".($var1 % $var2) ."<br>";
-        echo "$var1 ** $var2 = ".($var1** $var2) ."<br>";
-        echo "$var1 %= $var2 = ".($var1 %= $var2) ."<br>";
-        echo "$var1 == $var2 = ".($var1 == $var2 ? 'True' : 'False') ."<br>";
+<?php
+require 'functions.php';
 
-        //testing if
-        if ($var1 > 1000){
-            echo "var1 is above 1000<br>";
-        }else{
-            echo "var1 is below 1000<br>";
-        }
+$person = new Person();
 
-        //testing switch
-        echo "testing switch<br>";
-        switch($var4){
-            case 5:
-                echo "5";
-                break;
-            case 10:
-                echo "10";
-                break;
-            default:
-                echo "kamu siapa?";
-        }
-        echo "<br>";
-    ?>
+// Create Data
+$person->setName("John");
+$person->setBirth("1 January 2000");
+$person->setAge(10);
 
+// Get Data
+echo $person->getName()."<br>";
+echo $person->getBirth()."<br>";
+echo $person->getAge()."<br>";
 
-    <?php echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . "."; ?>
-</body>
-</html>
+echo "<br>";
+
+// Create or Update
+$person->setName("Anne");
+$person->setBirth("10 June 1999");
+$person->setAge(23);
+
+// Get Data
+echo $person->getName()."<br>";
+echo $person->getBirth()."<br>";
+echo $person->getAge()."<br>";
+
+// Delete Data
+echo $person->deleteName();
+
+// Get Data
+echo $person->getName();
+
+// Update Data
+echo $person->updateName("Foo Bar")."<br>";
